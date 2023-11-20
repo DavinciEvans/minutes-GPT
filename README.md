@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python MinutesGPT.py --audio /path/to/meeting_record.wav --language chinese
 ```
 
-我们推荐使用 .wav 或是 .mp3 格式的录音文件
+我们推荐使用 .wav 或是 .mp3 格式的录音文件。初次进行的语音转录内容会在本地的 `.asr_cache` 目录下进行缓存，之后的执行如果本地有缓存则会直接跳过语音转录，减少程序的执行时间。因此如果不满意生成地内容，依然可以快速地多次调用会议纪要 GPT
 
 等待片刻后会在文件夹下生成 `output.md` 文件，即为生成的会议纪要，你也可以手动指定导出的路径地址
 
